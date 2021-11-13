@@ -1,5 +1,4 @@
 let array = ["liisa", "Sanna"];
-//let nimi = document.getElementById("teksti").value;
 function add(){
     array.push(document.getElementById("teksti").value);
     console.log(array);
@@ -13,8 +12,9 @@ function remove(){
         console.log(array);
     }
 }
-let lista="";
+
 function show(){
+    let lista="";
     array.sort();
     array.forEach(printtaa)
     function printtaa(item, index) {
