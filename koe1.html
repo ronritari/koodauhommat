@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>anna numero ja jaan sen kolmella</p>
+    <input type="number" id="luku" placeholder="anna luku">
+    <input type="button" value="jaa" onclick="jaa()">
+    <p id="tulos"></p>
+
+    <script>
+        function jaa() {
+            let luku = document.getElementById("luku").value
+            let tulos = luku/3
+            document.getElementById("tulos").innerHTML = tulos
+        }
+        
+
+    </script>
+</body>
+</html>
